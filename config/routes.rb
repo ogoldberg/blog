@@ -1,5 +1,6 @@
 Blog::Application.routes.draw do |map|
-  resources :articles
+    root :to => "articles#index"
+    resources :articles
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
