@@ -8,4 +8,9 @@ class SessionsController < ApplicationController
             render :action => 'new'
         end
     end
+    
+    def destroy 
+        reset_session
+        redirect_to root_path, :now => "You successfully logged out"
+    end
 end
