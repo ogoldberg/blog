@@ -16,7 +16,4 @@ Blog::Application.configure do
 
   # Don't care if the mailer can't send
   config.action_mailer.raise_delivery_errors = false
-
-  #Report deprecation notices for development environment
-  config.active_support.deprecation = :log
 end
